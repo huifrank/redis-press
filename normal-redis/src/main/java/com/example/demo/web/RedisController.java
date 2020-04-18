@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/redis")
-public class UserController {
+public class RedisController {
 
     private static String SUCCESS = "SUCCESS";
 

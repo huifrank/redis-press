@@ -6,6 +6,7 @@
     <modules>
         <module>normal-redis</module>
         <module>new-redis</module>
+        <module>new-redis/demo</module>
     </modules>
     <groupId>com.example</groupId>
     <artifactId>redis-press</artifactId>
