@@ -5,13 +5,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>normal-redis</module>
+        <module>new-redis</module>
     </modules>
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.6.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
     <groupId>com.example</groupId>
     <artifactId>redis-press</artifactId>
     <version>0.0.1-SNAPSHOT</version>
