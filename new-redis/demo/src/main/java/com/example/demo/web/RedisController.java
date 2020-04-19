@@ -1,6 +1,7 @@
 package com.example.demo.web;
 
 import com.example.demo.service.RedisService;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,6 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/redis")
+@Slf4j
 public class RedisController {
 
     private static String SUCCESS = "SUCCESS";

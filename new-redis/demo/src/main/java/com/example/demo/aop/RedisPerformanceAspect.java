@@ -29,6 +29,7 @@ public class RedisPerformanceAspect {
             watch.stop();
             log.info("method:{} spend : {}",name,watch.getTime());
         } catch (Throwable throwable) {
+            //这个地方会把方法执行的异常吃掉，不过无所谓了
             throwable.printStackTrace();
         }
         return proceed;
