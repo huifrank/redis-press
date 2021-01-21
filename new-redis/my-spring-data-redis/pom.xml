@@ -22,7 +22,7 @@
         <jedis>2.9.0</jedis>
         <srp>0.7</srp>
         <jredis>06052013</jredis>
-        <jackson>2.6.7</jackson>
+        <jackson>2.12.1</jackson>
         <cdi>1.0</cdi>
     </properties>
 
