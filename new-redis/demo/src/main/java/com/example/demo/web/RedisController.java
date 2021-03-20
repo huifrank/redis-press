@@ -64,4 +64,12 @@ public class RedisController {
         redisService.batchNormalDel(list);
         return SUCCESS;
     }
+
+
+    @GetMapping("/get")
+    public String randomNormalBatchDel(@RequestParam(defaultValue = "key") String key){
+
+        redisService.get(key);
+        return SUCCESS;
+    }
 }

@@ -8,6 +8,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @Slf4j
@@ -39,5 +40,10 @@ public class RedisServiceImpl implements RedisService {
     @Override
     public void batchNormalDel(List< String> list){
         list.stream().forEach(redisTemplate::delete);
+    }
+
+    @Override
+    public Optional<Object> get(String key){
+        return Optional.ofNullable(redisTemplate.opsForValue().get(key));
     }
 }
